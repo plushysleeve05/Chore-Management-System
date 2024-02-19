@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  
+  body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(4, 32, 21);
+    transition: background-color 0.5s ease;
+
+  }
+  
+  .form-container {
+    height: 100vh;
+width: 50vw;
+background-color: rgb(4, 32, 21);
+color: wheat;
+text-align: center;
+object-fit: contain;
+display: flex;
+justify-content: center;
+opacity: 0;  /* Initially set opacity to 0 */
+transition: opacity 1s ease-in-out;  /* Apply transition to opacity property */
+}
+
+.form-container.show {
+opacity: 1;  /* Change opacity to 1 to make it visible */
+}
+
+.images-container {
+background-image: url("../images/opt4.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+width: 50vw;
+height: 100vh;
+border-radius: 60px 0 0 60px;
+}
+
+.wrapper {
+position: relative;
+max-width: 500px;
+width: 100%;
+padding: 45px;
+border-radius: 6px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+margin: 100px 0 0 0;
+}
+
+.wrapper h2 {
+position: relative;
+font-size: 22px;
+font-weight: 600;
+color: aliceblue;
+}  
+  .wrapper h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: wheat;
+  }
+  
+  .wrapper form {
+    margin-top: 30px;
+  }
+  
+  .wrapper form .input-box {
+    height: 42px;
+    margin: 18px 0;
+  }
+  
+  form .input-box input,
+  form .input-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 17px;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(4, 32, 21);
+    border: 1.5px solid wheat;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  form .input-box input:focus,
+  form .input-box input:valid,
+  form .input-box select:focus,
+  form .input-box select:valid {
+    border-color: wheat;
+  }
+  
+form .policy {
+display: flex;
+align-items: center;
+}
+
+form h3 {
+color: wheat;
+font-size: 14px;
+font-weight: 500;
+margin-left: 10px;
+}
+
+.input-box.button input {
+color: rgb(4, 32, 21);
+letter-spacing: 1px;
+border: none;
+background: wheat;
+cursor: pointer;
+}
+
+.input-box.button input:hover {
+background: dimgray;
+}
+
+form .text h3 {
+color: wheat;
+width: 100%;
+text-align: center;
+}
+
+form .text h3 a {
+color: wheat;
+text-decoration: none;
+}
+
+form .text h3 a:hover {
+text-decoration: underline;
+color: blueviolet;
+}
+
+
+.input-box-radio {
+display: flex;
+align-items: center;
+}
+
+.input-box-radio label {
+margin-right: 10px;
+color: wheat;
+}
+
+.input-box-radio input[type="radio"] {
+width: 18px; 
+height: 18px; 
+margin-right: 5px;
+}
+
